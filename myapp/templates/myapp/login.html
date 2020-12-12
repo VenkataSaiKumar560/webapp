@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+</head>
+<body align="center">
+	<form action="{% url 'login' %}" method="POST" align="center">
+	{% csrf_token %}
+	<br>
+	<br>
+	<center>
+			<h2><u>Login Form</u></h2>
+	</center>
+		<label>&nbsp;&nbsp;RgdID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+		<input type="text" name="rid" placeholder="Enter your Regd ID" required>
+		<br><br>
+
+		<label>Password:&nbsp;</label>
+		<input type="password" name="pass" placeholder="Enter your password" REQUIRED>
+		<br><br>
+		<input style="background-color: lightgreen" type="submit" value="LOGIN">
+	</form>
+	<br>
+	<br>
+	<br>
+	<a href="{% url 'home' %}">HOME</a>
+	</body>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Entered Data</title>
+</head>
+<body style="background-color: skyblue">
+	<table border="1" align="center" cellspacing="1" cellpadding="5">
+		<tr>
+			<th>RgdID</th>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Phone</th>
+			<th>Password</th>
+		</tr>
+
+		{% for i in data %}
+		<tr>
+			<td>{{ i.RID }}</td>
+			<td>{{i.Name}}</td>
+			<td>{{i.Email}}</td>
+			<td>{{i.Phone}}</td>
+			<td>{{i.Password}}</td>
+		</tr>
+		{% endfor %}
+	</table>
+	{{data}}
+</body>
+</html>
