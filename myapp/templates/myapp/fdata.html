@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>User Entered Data</title>
+	<title>Faculty Data Page</title>
 </head>
 <body>
-	<h2 align="center"><u>Student Entered Data</u></h2>
+	<h2 align="center"><u>Faculty Data</u></h2>
 	<table border="1" align="center" cellspacing="1" cellpadding="5">
 		<tr>
 			<th>RgdID</th>
@@ -16,11 +16,11 @@
 
 		{% for i in data %}
 		<tr>
-			<td>{{ i.RID }}</td>
-			<td>{{i.Name}}</td>
-			<td>{{i.Email}}</td>
-			<td>{{i.Phone}}</td>
-			<td>{{i.Password}}</td>
+			<td>{{ i.FID }}</td>
+			<td>{{i.FName}}</td>
+			<td>{{i.FEmail}}</td>
+			<td>{{i.FPhone}}</td>
+			<td>{{i.FPassword}}</td>
 		</tr>
 		{% endfor %}
 	</table>

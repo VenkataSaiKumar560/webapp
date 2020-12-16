@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hi {{data.RID}} !</title>
+</head>
+<body>
+			<h1><u>Hello {{data.RID}}! Your Details:</u></h1>
+			<ol>
+				<li>Your Rgd ID:{{data.RID}}</li>
+				<li>Your Name:{{data.Name}}</li>
+				<li>Your Email ID:{{data.Email}}</li>
+				<li>Your PhoneNo:{{data.Phone}}</li>
+				<li>Your Password:{{data.Password}}</li>
+			</ol>
+
+			Your attendance Percentage is : {{smks.Attendance}}
+			<br><br>
+
+			Your Marks : {{smks.Marks}}
+			<br><br>
+			
+			<a href="{% url 'edit' data.RID data.Stype %}">Update</a>
+
+
+
+
+</body>
+</html>

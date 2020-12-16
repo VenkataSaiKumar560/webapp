@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hi {{data.FID}} !</title>
+</head>
+<body>
+			<h1><u>Hello Sir/Mam ! Welcome </u></h1>
+			<ol>
+				<li>Your Rgd ID:{{data.FID}}</li>
+				<li>Your Name:{{data.FName}}</li>
+				<li>Your Email ID:{{data.FEmail}}</li>
+				<li>Your PhoneNo:{{data.FPhone}}</li>
+				<li>Your Password:{{data.FPassword}}</li>
+			</ol>
+
+		
+
+			<a href="{% url 'edit' data.FID data.Ftype %}">Update</a>
+			<br><br>
+			<a href="{% url 'fmodify' %}">ModifyStudentDetails</a>
+
+
+
+</body>
+</html>

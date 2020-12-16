@@ -23,6 +23,9 @@ urlpatterns = [
     path('show/',views.show,name='show'),
     path('home/',views.home,name='home'),
     path('login/',views.login,name='login'),
+    path('edit/<str:num>/<str:type1>',views.edit,name='edit'),
+    path('fshow/',views.fshow,name='fshow'),
+    path('fmodify/',views.fmodify,name = 'fmodify'),
 
 
 ]

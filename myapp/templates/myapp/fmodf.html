@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modification Page</title>
+</head>
+<body>
+		<h3>Modification Form</h3>
+		<form action="{% url 'fmodify' %}" method="POST" align ="center">
+			{% csrf_token %}
+		<label>Fname : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+		<input type="text" name="fname" placeholder="Enter Fname" required>
+		<br><br>
+		<label>Std.Rgd ID: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+		<input type="text" name="rid" placeholder="Enter StudentID" required>
+		<br><br>
+		<label>Marks: &nbsp;</label>
+		<input type="text" name="marks" placeholder="Enter Student Marks" required>
+		<br><br>
+		<label>Attendance: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+		<input type="text" name="attend" placeholder="% of Attendance" required>
+		<br><br>
+		<input type="submit" value="Submit">
+		</form>
+</body>
+</html>
